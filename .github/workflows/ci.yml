@@ -1,4 +1,4 @@
-name: Build and Test
+name: C/C++ CI
 
 on: [push, pull_request]
 
@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Compile the project
+    - name: Compile
       run: make
-    - name: Execute the program
+    - name: Run
       run: ./main
