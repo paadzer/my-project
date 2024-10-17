@@ -12,3 +12,8 @@ jobs:
       run: make
     - name: Run
       run: ./main
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: compiled-application
+        path: ./main
